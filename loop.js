@@ -1,20 +1,20 @@
-// for (let i = i; i <= 3; i++) {
-//     console.log('hello world')
+//* for loop
+// for (let i = 1; i <= 3; i++) {
+//   console.log("hello world");
 // }
 
 // function loopThroughArray() {
 //   const tripLocation = ["London", "Bali", "Amsterdam", "Paris"];
-
 //   for (let i = 0; i < tripLocation.length; i++) {
 //     console.log(tripLocation[i]);
 //   }
 
-// * Reverse Loop through array
+//* Reverse Loop through array
 //   for (let i = tripLocation.length - 1; i >= 0; i--) {
 //     console.log(tripLocation[i]);
 //   }
 
-// * Break keyword [stop and go out loop]
+//* Break keyword [stop and go out loop]
 //   for (let i = 0; i < tripLocation.length; i++) {
 //     if (tripLocation[i] === "Bali") {
 //       break;
@@ -22,7 +22,7 @@
 //     console.log(tripLocation[i]);
 //   }
 
-// * Continue keyword [stop and go to next loop]
+//* Continue keyword [stop and go to next loop]
 //   for (let i = 0; i < tripLocation.length; i++) {
 //     if (tripLocation[i] === "Bali") {
 //       continue;
@@ -33,7 +33,7 @@
 
 // loopThroughArray();
 
-// * While Loop
+//* While Loop
 
 // function whileLoop() {
 //   let i = 0;
@@ -52,10 +52,15 @@
 // whileLoop();
 
 //* NestedLoop [can't run main loop before sub loop run success]
+// outer loop
+// for (let i = 1; i <= 3; i++) {
+// inner loop
+//   for (let j = 1; j <= 4; j++) {
+//     console.log(i, j);
+//   }
+// }
 
-// function NestedLoop() {}
-
-// Exercise
+//* Exercise
 // Write a code that will loop from 0 to 15. for each loop, it will check if
 // the current index number is odd or even, and display a message to the console
 
@@ -65,14 +70,30 @@
 // 2 is even
 // 3 is odd
 
-function forLoop() {
-  for (let i = 0; i <= 15; i++) {
-    if (i % 2 === 0) {
-      console.log(i + " is even");
-    } else {
-      console.log(i + " is odd");
-    }
-  }
-}
+//* Exercise for loop
+// function forLoop() {
+//   for (let i = 0; i <= 15; i++) {
+//     if (i % 2 === 0) {
+//       console.log(i + " is even");
+//     } else {
+//       console.log(i + " is odd");
+//     }
+//   }
+// }
 
-forLoop();
+// forLoop();
+
+//* Exercise while loop
+// function whileLoop() {
+//   let i = 0;
+//   while (i <= 15) {
+//     i++;
+//     if (i % 2 === 0) {
+//       console.log(i + " is even");
+//     } else {
+//       console.log(i + " is odd");
+//     }
+//   }
+// }
+
+// whileLoop();
