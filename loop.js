@@ -9,12 +9,12 @@
 //     console.log(tripLocation[i]);
 //   }
 
-//   // * Reverse Loop through array
+// * Reverse Loop through array
 //   for (let i = tripLocation.length - 1; i >= 0; i--) {
 //     console.log(tripLocation[i]);
 //   }
 
-//   // * Break keyword [stop and go out loop]
+// * Break keyword [stop and go out loop]
 //   for (let i = 0; i < tripLocation.length; i++) {
 //     if (tripLocation[i] === "Bali") {
 //       break;
@@ -22,7 +22,7 @@
 //     console.log(tripLocation[i]);
 //   }
 
-//   // * Continue keyword [stop and go to next loop]
+// * Continue keyword [stop and go to next loop]
 //   for (let i = 0; i < tripLocation.length; i++) {
 //     if (tripLocation[i] === "Bali") {
 //       continue;
@@ -41,7 +41,7 @@
 //     console.log(i);
 //     i++;
 //   }
-//   // * While loop is use to repeat a specific block of code an unknown number of times, until a condition
+// * While loop is use to repeat a specific block of code an unknown number of times, until a condition
 //   let count = 1;
 //   while (count < 100) {
 //     count = count + 2;
