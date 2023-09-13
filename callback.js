@@ -57,7 +57,7 @@
 
 // * Get array from origiNalArr to recalculate * 2
 // const newArr = mapArray(originalArr, (item) => {
-//   return item + 1;
+//   return item * 2;
 // });
 
 // console.log(newArr);
@@ -68,59 +68,21 @@
 // * 3. cb must return only boolean, if it return true, keep that item, otherwise, don't keep it.
 // * 4. filterArray must return a new array that keeps all true items
 
-// function filterArray(arr, cb) {
-//   const result = [];
-//   for (let i = 0; i < arr.length; i++) {
-//     const isKeeping = cb(arr[i]);
-//     if (isKeeping) {
-//       result.push(arr[i]);
-//     }
-//   }
-//   return result;
-// }
+function filterArray(arr, cb) {
+  const result = [];
+  for (let i = 0; i < arr.length; i++) {
+    const isKeeping = cb(arr[i]);
+    if (isKeeping) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
 
-// const beforeFilter = [-1, 3, 20, -24];
+const beforeFilter = [-1, 3, 20, -24];
 
-// const afterFilter = filterArray(beforeFilter, (item) => {
-//   return item > 0;
-// });
+const afterFilter = filterArray(beforeFilter, (item) => {
+  return item > 0;
+});
 
-// console.log(afterFilter);
-
-// const callMe = () => {
-//   console.log("hello from callback function");
-// };
-
-// const greeting = (callback) => {
-//   console.log("hello world");
-//   callback();
-// };
-
-//* Call a greeting function with passing in reference of 'callMe' function
-// greeting(callMe);
-
-// greeting(function () {
-//   console.log("Ae from annoymous function");
-// });
-
-//* Call a greeting with passing in an annonymous arrow function
-// greeting(() => {
-//   console.log("Ae from annonymous arrow function");
-// });
-
-//* Callback function with parameter
-// const greeting2 = (callback) => {
-//   console.log("hello world");
-//   callback("Ae");
-// };
-
-const callMe = () => {
-  console.log("hello from callback function");
-};
-
-const greeting = (callback) => {
-  console.log("hello world");
-  callback();
-};
-
-greeting(callMe);
+console.log(afterFilter);
