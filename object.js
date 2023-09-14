@@ -1,3 +1,44 @@
+//* Object : JavaScript Object Declaration
+// const object_name = {
+//     key1: value1
+//     key2: value2
+// }
+
+//* Example
+// const person = {
+//     name: "John",
+//     age: 20,
+// }
+
+//*Object - Accessing Object Properties
+
+//?Using dot nonation
+// const person = {
+//     name: "John",
+//     age: 20,
+// }
+// console.log(person.name) // John
+
+//? Using bracket notation
+// const person = {
+//     name: "John",
+//     age: 20,
+// }
+
+// console.log(person["name"]) //John
+
+//* Object: JavaScript Object can contain function
+// const person = {
+//   name: "John",
+//   age: 20,
+//   greet: () => {
+//     console.log("Hello");
+//   },
+// };
+
+// person.greet();
+
+//* Object: Nested Object
 // const person = {
 //   name: "Ae",
 //   age: 29,
@@ -64,13 +105,13 @@ const data = [
 //   );
 // });
 
-const resultString = data.reduce((prevVal, val, idx) => {
-  return `${prevVal}\n
-    Person ${idx + 1}\n
-    Name: ${val.name}\n
-    Age: ${val.age}\n
-    Job: ${val.job}\n
-    -----------------`;
-}, "");
+// const resultString = data.reduce((prevVal, val, idx) => {
+//   return `${prevVal}\n
+//     Person ${idx + 1}\n
+//     Name: ${val.name}\n
+//     Age: ${val.age}\n
+//     Job: ${val.job}\n
+//     -----------------`;
+// }, "");
 
-console.log(resultString);
+// console.log(resultString);
