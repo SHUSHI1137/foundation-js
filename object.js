@@ -79,6 +79,7 @@ const data = [
   },
 ];
 
+//* Solution 1
 // data.forEach((ndata, idx) => {
 //   console.log("Person", idx + 1);
 //   console.log("name", ndata["name"]);
@@ -87,6 +88,7 @@ const data = [
 //   console.log("-----------");
 // });
 
+//* Solution 2
 // data.forEach((ndata, idx) => {
 //   console.log(
 //     "Person",
@@ -105,6 +107,7 @@ const data = [
 //   );
 // });
 
+//* Solution 3
 // const resultString = data.reduce((prevVal, val, idx) => {
 //   return `${prevVal}\n
 //     Person ${idx + 1}\n
