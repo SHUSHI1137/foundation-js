@@ -305,6 +305,58 @@
 
 // console.log(compoundedReturn(100, 20, 2));
 
+//? Easy 13
+// !
+//* Pattern 1
+// const mean = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] !== "number") {
+//       return null;
+//     }
+//   }
+
+//   return arr;
+// };
+
+// console.log(mean([1, 2, 3]));
+// console.log(mean([1, "foo", 3]));
+//!
+
+//!
+//* Pattern 2
+// const mean = (arr) => {
+//   if (arr.length === 1) return arr;
+
+//   const avgResult = Math.round(arr);
+
+//   if (arr.length >= 0) {
+//     return arr;
+//   }
+
+//   return [null];
+// };
+
+// console.log(mean([1, 2, 3]));
+// console.log(mean([1, "foo", 3]));
+//!
+
+//* Pattern 3
+// const mean = (arr) => {
+//   let sum = 0;
+
+//   const isAllNumber = arr.every((val) => typeof val === "number");
+//   if (!isAllNumber) return null;
+
+//   arr.forEach((n) => {
+//     sum += n;
+//   });
+
+//   return sum / arr.length;
+// };
+
+// console.log(mean([1, 2, 3])); // 2
+// console.log(mean([1, "foo", 3])); // null
+
 //? Easy 14
 // const mid = (arr) => {
 //   if (arr.length === 1) return arr;
@@ -324,6 +376,23 @@
 // console.log(mid(["join"]));
 // console.log(mid(["foo", "bar", "baz"]));
 // console.log(mid([1, 2, 3, 4]));
+
+//? Easy 15
+// //* Pattern 1
+// const arr = [3, 2, 1, 12, 13, 11];
+// arr.sort(function (a, b) {
+//   return a - b;
+// });
+
+// console.log(arr);
+
+//* Pattern 2
+// const arr = [3, 2, 1, 12, 13, 11];
+// arr.sort((a, b) => a - b);
+
+// console.log(arr);
+
+//? Easy 16
 
 //? Easy 18
 // const flatMap = (arr) => {
