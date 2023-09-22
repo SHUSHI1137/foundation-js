@@ -393,6 +393,35 @@
 // console.log(arr);
 
 //? Easy 16
+// const median = (arr) => {
+//   if (arr.length === 0) {
+//     return;
+//   }
+
+//   arr.sort((a, b) => a - b);
+//   const mindpoint = Math.floor(arr.length / 2);
+//   const median = arr.length % 2 === 1;
+//   arr[mindpoint];
+//   (arr[midpoint - 1] + arr[midpoint]) / 2;
+//   return median;
+// };
+
+// median[(2, 1, 5, 3, 4)];
+
+const arr = [2, 1, 5, 3, 4];
+arr.sort((a, b) => a - b);
+
+const median = (arr) => {
+  if (arr.length % 2 != 0) {
+    let middleNum = Math.floor(arr.length / 2);
+    median = arr[middleNum];
+  } else {
+    let middleNum = Math.floor(arr.length / 2);
+    median = (arr[middleNum] + arr[middleNum - 1]) / 2;
+  }
+};
+
+console.log(median);
 
 //? Easy 18
 // const flatMap = (arr) => {
